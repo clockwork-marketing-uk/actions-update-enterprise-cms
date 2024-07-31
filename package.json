@@ -1,0 +1,7 @@
+{
+    "name": "actions-update-enterprise-cms",
+    "version": "1.0.0",
+    "description": "Checks and updates the version of the CMS on a Enterprise site",
+    "author": "Clockwork Marketing <dev@clock-work.co.uk>",
+    "license": "ISC"
+}
