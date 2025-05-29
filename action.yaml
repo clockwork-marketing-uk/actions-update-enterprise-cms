@@ -38,7 +38,7 @@ runs:
     - name: Install node
       uses: actions/setup-node@v4
       with:
-        node-version: 19
+        node-version: 20
         registry-url: 'https://registry.npmjs.org'
 
     - name: Install Dependencies
@@ -49,10 +49,10 @@ runs:
           npm config set '//registry.npmjs.org/:_authToken' "${{ inputs.npm_token }}"
           npm ci --ignore-scripts
 
-    - name: Setup PHP 8.1
+    - name: Setup PHP 8.3
       uses: shivammathur/setup-php@v2
       with:
-          php-version: '8.1'
+          php-version: '8.3'
       env:
         GITHUB_TOKEN: ${{ inputs.gh_package_key }}
 
